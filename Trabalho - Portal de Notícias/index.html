@@ -2,33 +2,18 @@
 <html lang="pt-br">
 
 <head>
-  
-    <title> Orion </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Falta Favicon e Descrição do site-->
+
+  <title> Orion </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Falta Favicon e Descrição do site-->
+
+
+  <style>
     
 
-<style> 
-   
 
-nav ul {display: flex;} 
-   li   {margin: 0.5em;}
-
-
-/* Todos os elementos dentro da tag ul são organizados de forma flexivel*/
-          /* list-style: upper-roman;  Estiliza a lista com números romanos */
-      
-        
-        
-
-
-
-
-          body header div{ background:#3b6d7e;
-
-          }
-   *{ padding: 0;
-      margin: 0;}
+    /* Todos os elementos dentro da tag ul são organizados de forma flexivel*/
+    /* list-style: upper-roman;  Estiliza a lista com números romanos */
 
 
 
@@ -36,74 +21,111 @@ nav ul {display: flex;}
 
 
 
+    body header div {
+      background: #000000;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
 
 
 
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 1;
+      padding: 1;
+    }
+
+       div{
+        display: flex;
+       }
+     
+    nav ul li {
+      margin: 5px;
+      padding: 15px;
+
+      }
+     
+      a{
+      color: #000000;
+      text-decoration: #080808;}
+
+      nav a:hover {
+    color: #ff5757;
+    text-decoration: none;
+}
+
+    
 
 
+  </style>
 
-
-
-
-
-
-
-
-
-
-
-
-</style>
-  
 </head>
+
+<!-- class=" nome do tag / e width= 100 porcento"-->
 
 <body>
 
+
+
+  
+
   <header>
-   
+
     <div>
-      <img src="./assets/image/logo.png" width="100" alt="nosso logo preto de fundo e um globo branco com estrelas de fundo com o nome ORION nossa marca">
+      <img src="./assets/image/logo.png" width="100"
+        alt="nosso logo preto de fundo e um globo branco com estrelas de fundo com o nome ORION nossa marca">
     </div>
-      <nav>
-      <ul >
-      <li><a href="./perfil.html"> Perfil </a></li>  <p>
-     <li> <a href="./explorar.html"> Explorar </a></li> 
-    </ul>
+    <nav>
+      <ul class="overlay">
+        <li><a href="./perfil.html"> Perfil </a></li>
+        <li> <a href="./explorar.html"> Explorar </a></li>
+      </ul>
     </nav>
 
+
+
+
+    
   </header>
 
-  <hr>
+  
   <main>
 
-    <article>
-      <img src="./assets/image/img principal com sombra.png" width="1536" alt="Uma nuvem azul brilhante se espalha suavemente pelo espaço escuro, com contornos difusos e etéreos. 
-     Pequenos pontos de luz, como estrelas distantes, reluzem ao redor, realçando sua beleza misteriosa.">
-    </article>
 
+    <article class="image-container">
+      <video width="100%"  autoplay>
+        <source src="./assets/image/brilhosa.mp4" type="video/mp4">
+        </video>
+    <div class="overlay">os de luz, como estre
+    </article>
+  </div>
     <section>
       <h1> Astrônomos descobrem galáxias antigas com enormes massas de gás! </h1>
       <p>Novas observações revelam que o universo primitivo era ainda mais propício
         à formação de estrelas do que se imaginava. Clique e saiba mais!</p>
-       
-      
+
+
       <a href="./noticia1.html"> <i>Saiba Mais</i></a>
     </section>
 
-
+  <div class="test">
     <hr>
 
     <br>
 
     <section> <!-- Aqui Vou Colocar o texto dentro da imagem e uma igem do lado da outra-->
       <h1> Notícias em destaque </h1>
-      <img src="./assets/image/James Weeb.png" width="600">
+      <img src="./assets/image/James Weeb.png" class="imagemfundo" width="600">
       <h3> Telescópio James Webb revela imagem inédita dos Pilares da Criação</h3>
       <p> O Telescópio Espacial James Webb capturou uma imagem detalhada dos
         Pilares da Criação, <br> oferecendo uma visão sem precedentes da formação
         estelar.</p>
-        <a href="./JamesWeb.html"> <i>Leia Mais</i></a>
+      <a href="./JamesWeb.html"> <i>Leia Mais</i></a>
     </section>
 
     <br>
@@ -114,7 +136,7 @@ nav ul {display: flex;}
       <h3>Índia conquista o Polo Sul Lunar com a missão Chandrayaan-3</h3>
       <p>A missão indiana Chandrayaan-3 fez história ao pousar com sucesso no Polo <br>
         Sul da Lua, abrindo novas possibilidades para a exploração lunar.</p>
-        <a href="./indianalua.html"> <i>Leia Mais</i></a>
+      <a href="./indianalua.html"> <i>Leia Mais</i></a>
     </section>
 
     <hr>
@@ -137,17 +159,22 @@ nav ul {display: flex;}
         <p> A sonda Parker Solar Probe da NASA fez uma aproximação histórica, <br>
           chegando a apenas 6,1 milhões de quilômetros da superfície solar, coletando dados vitais sobre o Sol e o vento
           solar.</p>
-          <a href="./astronomosdescobrem.html"> <i>Leia Mais</i></a>
+        <a href="./astronomosdescobrem.html"> <i>Leia Mais</i></a>
       </article>
       <br>
       <hr>
+    </div>
+
+    <p> </p>
+
+
 
       <article>
-        <img src="./assets/image/Missao artemis.png" width="1510">
+        <img src="./assets/image/Missao artemis.png" width="100%">
         <h1> Missão Artemis 2: Preparativos Avançam para o Retorno Humano à Lua</h1>
         <p>A NASA avança nos preparativos para a missão Artemis 2, prevista para abril de 2026, <br>
           que levará astronautas à órbita lunar pela primeira vez em mais de 50 anos. </p>
-          <a href="./astronomosdescobrem.html"> <i>Leia Mais</i></a>
+        <a href="./astronomosdescobrem.html"> <i>Leia Mais</i></a>
 
         <br>
         <hr>
@@ -184,7 +211,7 @@ nav ul {display: flex;}
         <h1> Buraco Negro Emite Jatos Gigantescos Superando o Tamanho da Via Láctea </h1>
         <p> Astrônomos detectaram um buraco negro emitindo jatos maiores que a Via Láctea, <br>
           revelando novos dados sobre sua dinâmica.</p>
-          <a href="./buraconegro.html"> <i>Leia Mais</i></a>
+        <a href="./buraconegro.html"> <i>Leia Mais</i></a>
       </section>
 
       <hr>
@@ -200,17 +227,19 @@ nav ul {display: flex;}
       </section>
       <hr>
       <p></p>
-      
 
 
-      <section> 
-       
+
+      <section>
+
         <img src="./assets/image/brilhosa.png" width="1510">
-       
+
         <h1> Calendário Astronômico 2025: Eventos Imperdíveis do Céu</h1>
-        <p>  Descubra os principais fenômenos astronômicos de 2025, como eclipses, chuvas de meteoros e conjunções planetárias.
-          <br> Não perca as melhores datas para observar o cosmos! </p>
-       
+        <p> Descubra os principais fenômenos astronômicos de 2025, como eclipses, chuvas de meteoros e conjunções
+          planetárias.
+          <br> Não perca as melhores datas para observar o cosmos!
+        </p>
+
       </section>
       <a href="./cinturaodekuiper.html"> <i>Leia Mais</i></a>
       <hr>
@@ -221,38 +250,38 @@ nav ul {display: flex;}
 <footer>
 
 
-<ul>
-
-
-<li>
-  <a href="mailto:suporteorion@gmail.com">Enviar e-mail</a>
-</li>
-
-<li>
-<a href="tel:+551199999-9999">Telefone: +55 (11) 99999-9999</a>
-</li>
-
-<li>
-  <address>Endereço: Rua Exemplo, 123, Cidade, Estado, País</address>
-</li>
-
-</ul>
-
-<aside>
-
   <ul>
-<li> Política de Privacidade</li>
-<li> Termos de Uso</li>
-<li>Cookies e Política de Coleta de Dados</li>
-</ul>
 
-</aside>
-<p>
-Copyright
-</p>
-<strong>
-<p>© 2025 Seu Nome ou Nome do Portal. Todos os direitos reservados.</p>
-</strong>
+
+    <li>
+      <a href="mailto:suporteorion@gmail.com">Enviar e-mail</a>
+    </li>
+
+    <li>
+      <a href="tel:+551199999-9999">Telefone: +55 (11) 99999-9999</a>
+    </li>
+
+    <li>
+      <address>Endereço: Rua Exemplo, 123, Cidade, Estado, País</address>
+    </li>
+
+  </ul>
+
+  <aside>
+
+    <ul>
+      <li> Política de Privacidade</li>
+      <li> Termos de Uso</li>
+      <li>Cookies e Política de Coleta de Dados</li>
+    </ul>
+
+  </aside>
+  <p>
+    Copyright
+  </p>
+  <strong>
+    <p>© 2025 Seu Nome ou Nome do Portal. Todos os direitos reservados.</p>
+  </strong>
 </footer>
 
 </html>
